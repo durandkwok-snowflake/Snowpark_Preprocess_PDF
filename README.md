@@ -1,11 +1,11 @@
 # Snowpark_Preprocess_PDF
 Welcome to the Snowflake Snowpark pdf demo. This demo showcases how you can easily use Snowpark in Snowflake in ingest pdfs, parse and split the pdf in batches. This is extremely useful when want to search and keep certain parts of the pdf.
 
-Setup
-Create Doc Stage for Raw PDF
+## Setup
+### Create Doc Stage for Raw PDF
 <img width="1118" alt="image" src="https://github.com/durandkwok-snowflake/Snowpark_Preprocess_PDF/assets/109616231/fccdcc53-8fb4-484c-b6d2-59f5aeadea1f">
 
-Create Doc Stage for Split PDF
+### Create Doc Stage for Split PDF
 <img width="1426" alt="image" src="https://github.com/durandkwok-snowflake/Snowpark_Preprocess_PDF/assets/109616231/3e9a3614-ec22-43c5-9a77-18f171127f71">
 
 ```SQL
