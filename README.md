@@ -1,5 +1,5 @@
 # Snowpark_Preprocess_PDF
-Welcome to the Snowflake Snowpark pdf demo. This demo showcases how you can easily use Snowpark in Snowflake in ingest pdfs, parse and split the pdf in batches. This is extremely useful when want to search and keep certain parts of the pdf.
+Welcome to the Snowflake Snowpark pdf demo. This demo showcases how you can easily use Snowpark in Snowflake in ingest pdfs, parse and split the pdf in batches. This is extremely useful when want to search and keep certain parts of the pdf. In this example, we are setting a split batch size of 50. We are using the Snowflakefile api from snowflake.snowpark.files api to get file handle to issue an open for the pdf. Then using PdfFileReader from PyPDF2 to loop through pages in the pdf and writes to PdfWriter. As it reaches the batch limit size. It will issue FileOperation api to write out the pdf to the destination stage that was sent in as a parameter.
 
 ## Setup
 ### Create Doc Stage for Raw PDF
