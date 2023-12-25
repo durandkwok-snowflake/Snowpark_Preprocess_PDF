@@ -54,10 +54,9 @@ def run(session, file_path, file_name, dest_stage_name):
     return whole_text
 $$;
 
-### Run the code to create the Snowpark Store Procedure preprocess_pdf
-
 CALL preprocess_pdf(build_scoped_file_url(@doc_stage_raw, 'Snowflake2021_10K.pdf'), 'Snowflake2021_10K', '@doc_stage_split' );
 ```
+### Run the code to create the Snowpark Store Procedure preprocess_pdf
 <img width="1411" alt="image" src="https://github.com/durandkwok-snowflake/Snowpark_Preprocess_PDF/assets/109616231/0b3ca8d3-1c1e-4bd1-a706-ede3ddbd3e28">
 
 <img width="1134" alt="image" src="https://github.com/durandkwok-snowflake/Snowpark_Preprocess_PDF/assets/109616231/c4f43467-c10b-4c64-987f-196f3b7ec2ef">
