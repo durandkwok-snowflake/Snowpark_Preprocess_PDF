@@ -38,7 +38,7 @@ def run(session, file_path, file_name, dest_stage_name):
             # Get the start and end page numbers for this batch
             start_page = b * batch_size
             end_page = min((b+1) * batch_size, len(input_pdf.pages))
-            DOC_AI_DB.DOC_AI_SCHEMA.DOC_STAGE_RAW
+
             # Add pages in this batch to the writer
             for i in range(start_page, end_page):
                 writer.add_page(input_pdf.pages[i])
